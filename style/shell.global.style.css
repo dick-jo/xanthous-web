@@ -35,6 +35,7 @@ section {
 	align-items: center;
 	background-color: var(--clr-secondary);
 	background-size: cover;
+	background-position: center;
 }
 
 section > * {
