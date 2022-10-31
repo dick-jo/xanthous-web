@@ -189,7 +189,7 @@ header > #title > h1 {
 	border-right: var(--ln-1);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 880px) {
 	#section-1 > .body > *:not(:last-child) {
 		border: none;
 	}
