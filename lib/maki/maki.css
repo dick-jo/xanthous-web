@@ -7,7 +7,7 @@
 /* Default animation duration value */
 
 :root {
-	--maki-duration: 1200ms;
+	--maki-duration: 800ms;
 }
 
 /* Scroll-in  */

@@ -10,6 +10,12 @@ h1 span {
 	font-family: 'Eureka-Endeavour', serif;
 }
 
+h2 {
+	font-family: 'Eureka-Endeavour', serif;
+	font-size: var(--fs-12);
+	line-height: var(--fs-9);
+}
+
 * {
 	font-family: 'JetBrains Mono', monospace;
 	color: var(--clr-primary);
@@ -30,4 +36,14 @@ marquee {
 p {
 	font-size: var(--fs-1);
 	color: var(--clr-primary);
+}
+
+p[data-variant='feat'] {
+	font-size: var(--fs-12);
+	line-height: var(--fs-9);
+}
+
+p[data-variant='feat'] span {
+	font-family: 'Uphoria-Endeavour', serif;
+	font-size: calc(var(--fs-12) * 2);
 }
