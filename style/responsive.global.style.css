@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1366px) {
 	:root {
 		--sp-01: var(--sp-large-01);
 		--sp-1: var(--sp-large-1);
@@ -33,7 +33,7 @@
 	}
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 800px) {
 	:root {
 		--sp-01: var(--sp-small-01);
 		--sp-1: var(--sp-small-1);

@@ -11,10 +11,259 @@ body {
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+}
+
+/* ------------------------------------------------------------ */
+/* Vars */
+/* ------------------------------------------------------------ */
+:root {
+	--max-width: 1366px;
+}
+
+/* ------------------------------------------------------------ */
+/* Sections */
+/* ------------------------------------------------------------ */
+section {
+	height: 100vh;
+	min-height: fit-content;
+	padding: var(--sp-2) var(--sp-4);
 	position: relative;
-	padding: var(--sp-3) 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	background-color: var(--clr-secondary);
+}
+
+section > * {
+	width: 100%;
+	max-width: var(--max-width);
+}
+
+section * {
+	/* Prevent ::before overlay clip */
+	z-index: 2;
+}
+
+section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	background-color: var(--clr-bg);
+}
+
+/* ------------------------------------------------------------ */
+/* Section: One */
+/* ------------------------------------------------------------ */
+#section-1 {
+	justify-content: space-between;
+	background-image: url(../assets/img/bg-1.png);
+	background-size: cover;
+}
+
+/* ------------------------------------------------------------ */
+/* Header */
+/* ------------------------------------------------------------ */
+header > * {
+	display: flex;
+	border-bottom: var(--ln-1);
+}
+
+/* Nav */
+header > nav {
+	padding: var(--sp-2) 0;
+	justify-content: space-between;
+	height: var(--sp-9);
+}
+
+@media only screen and (max-width: 800px) {
+	header > nav {
+		height: fit-content;
+		min-height: var(--sp-12);
+		flex-direction: column-reverse;
+		gap: var(--sp-2);
+		align-items: center;
+	}
+}
+
+@media only screen and (min-width: 1366px) {
+	header > nav {
+		height: var(--sp-12);
+	}
+}
+
+header > nav > .body {
+	padding: 0 var(--sp-2);
+	flex-grow: 1;
+}
+
+header > nav > .body > marquee {
+	display: flex;
+	align-items: center;
+}
+
+header > nav > * {
+	display: flex;
+}
+
+header > nav > .links > .link {
+	width: var(--sp-9);
+	padding: 0 var(--sp-1);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-left: var(--ln-1);
+}
+
+@media only screen and (max-width: 800px) {
+	header > nav > .links > .link:first-of-type {
+		border: none;
+	}
+}
+
+@media only screen and (min-width: 1366px) {
+	header > nav > .links > .link {
+		width: var(--sp-12);
+	}
+}
+
+header > nav > .links > .link > a {
+	width: 100%;
+	height: 100%;
+	padding: var(--sp-1) 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: var(--ln-1);
+	border-radius: var(--br-6);
+}
+
+@media only screen and (max-width: 800px) {
+	header > nav > .links > .link > a {
+		padding: var(--sp-01) 0;
+		border: none;
+	}
+}
+
+@media only screen and (min-width: 1366px) {
+	header > nav > .links > .link > a {
+		padding: var(--sp-01) 0;
+	}
+}
+
+header > nav > .links > .link > a > svg {
+	height: 100%;
+	aspect-ratio: 1 / 1;
+	fill: var(--clr-primary-light);
+}
+
+/* Title */
+header > #title {
+	padding: var(--sp-2) 0;
+	justify-content: center;
+	align-items: center;
+}
+
+header > #title > h1 {
+	/* Nudge for optical centering */
+	transform: translateY(var(--sp-2));
+}
+
+/* ------------------------------------------------------------ */
+/* Section: One > Body */
+/* ------------------------------------------------------------ */
+#section-1 > .body {
+	margin-bottom: var(--sp-4);
+	display: grid;
+	grid-template-columns: repeat(var(--grid-12), 1fr);
+	gap: var(--sp-2);
+}
+
+#section-1 > .body > *:not(:last-child) {
+	padding-right: var(--sp-2);
+	border-right: var(--ln-1);
+}
+
+@media only screen and (max-width: 800px) {
+	#section-1 > .body > *:not(:last-child) {
+		border: none;
+	}
+}
+
+#section-1 > .body > *:first-child,
+#section-1 > .body > *:nth-child(2) {
+	grid-column: span var(--grid-3);
+}
+
+#section-1 > .body > *:nth-child(3) {
+	grid-column: span var(--grid-6);
+}
+
+/*  */
+#mint-button-host {
+	min-height: calc(var(--sp-12) * 2);
+	padding: 0 var(--sp-2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ------------------------------------------------------------ */
+/* Mint Button */
+/* ------------------------------------------------------------ */
+
+#mint-button {
+	height: 100%;
+	position: relative;
+	flex-grow: 1;
+	border-style: none;
+	border-radius: var(--br-2);
+	background-color: var(--clr-ovr-wh-10);
+	backdrop-filter: blur(var(--sp-2));
+}
+
+#mint-button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	outline: var(--ln-1);
+	border-radius: var(--br-2);
+	animation-name: mint-button-pulse;
+	animation-duration: 2400ms;
+	animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+	animation-iteration-count: infinite;
+}
+
+#mint-button::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	outline: var(--ln-1);
+	border-radius: var(--br-2);
+	animation-name: mint-button-pulse;
+	animation-delay: 300ms;
+	animation-duration: 2400ms;
+	animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+	animation-iteration-count: infinite;
+}
+
+@keyframes mint-button-pulse {
+	from {
+		opacity: 1;
+		outline-offset: 0;
+	}
+	to {
+		opacity: 0;
+		outline-offset: var(--sp-4);
+	}
 }

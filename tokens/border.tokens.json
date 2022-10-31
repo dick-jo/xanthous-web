@@ -1,38 +1,6 @@
 {
 	"ln": {
-		"1": { "value": "1px solid #f0f0f0" },
-		"primary": {
-			"1": { "value": "1px solid {clr.primary}", "type": "border" },
-			"light": {
-				"1": { "value": "1px solid {clr.primary-light}", "type": "border" },
-				"12": { "value": "12px solid {clr.primary-light}", "type": "border" },
-				"24": { "value": "24px solid {clr.primary-light}", "type": "border" }
-			},
-			"mid": {
-				"1": { "value": "1px solid {clr.primary-mid}", "type": "border" },
-				"8": { "value": "8px solid {clr.primary-mid}", "type": "border" },
-				"12": { "value": "12px solid {clr.primary-mid}", "type": "border" },
-				"24": { "value": "24px solid {clr.primary-mid}", "type": "border" },
-				"48": { "value": "48px solid {clr.primary-mid}", "type": "border" }
-			}
-		},
-		"secondary": {
-			"light": {
-				"1": { "value": "1px solid {clr.secondary-light}", "type": "border" },
-				"24": { "value": "24px solid {clr.secondary-light}", "type": "border" }
-			},
-			"mid": {
-				"1": { "value": "1px solid {clr.secondary-mid}", "type": "border" },
-				"12": { "value": "12px solid {clr.secondary-mid}", "type": "border" },
-				"24": { "value": "24px solid {clr.secondary-mid}", "type": "border" },
-				"48": { "value": "48px solid {clr.secondary-mid}", "type": "border" }
-			}
-		},
-		"bg": {
-			"mid": {
-				"1": { "value": "1px solid {clr.bg-mid}", "type": "border" }
-			}
-		}
+		"1": { "value": "1px solid {clr.secondary}" }
 	},
 	"br": {
 		"01": { "value": "calc({sp.01} * 0.5)", "type": "borderRadius" },

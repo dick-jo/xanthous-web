@@ -1,5 +1,9 @@
 @font-face {
+	font-family: 'Eureka-Endeavour';
+	src: url('../assets/font/eureka-endeavour.otf') format('opentype');
+}
+
+@font-face {
 	font-family: 'Uphoria-Endeavour';
 	src: url('../assets/font/uphoria-endeavour.otf') format('opentype');
-	/* font-weight: 100 1000; */
 }
