@@ -1,9 +1,9 @@
 @font-face {
-	font-family: 'Eureka-Endeavour';
-	src: url('../assets/font/eureka-endeavour.otf') format('opentype');
+	font-family: 'metro-black';
+	src: url('../assets/font/metro-black-alt.otf') format('opentype');
 }
 
 @font-face {
-	font-family: 'Uphoria-Endeavour';
-	src: url('../assets/font/uphoria-endeavour.otf') format('opentype');
+	font-family: 'metro-medium';
+	src: url('../assets/font/metro-medium-oblique.otf') format('opentype');
 }

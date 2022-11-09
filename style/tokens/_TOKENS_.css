@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 31 Oct 2022 12:27:52 GMT
+ * Generated on Tue, 08 Nov 2022 10:51:24 GMT
  */
 
 :root {
@@ -140,6 +140,7 @@
   --clr-ovr-wh-20: rgba(255,255,255,0.2);
   --clr-ovr-wh-10: rgba(255,255,255,0.1);
   --clr-ovr-wh-0: rgba(255,255,255,0);
+  --clr-mid: #cdcdcd;
   --clr-primary: #fdfdfd;
   --clr-bg: var(--clr-ovr-bl-60);
   --clr-secondary: var(--clr-ovr-wh-20);
@@ -157,5 +158,6 @@
   --br-3: var(--sp-2);
   --br-2: var(--sp-1);
   --br-1: var(--sp-01);
+  --ln-primary-1: 1px solid var(--clr-primary);
   --ln-1: 1px solid var(--clr-secondary);
 }

@@ -1,24 +1,61 @@
 h1 {
-	font-family: 'Uphoria-Endeavour', serif;
-	font-size: min(18vw, calc(var(--fs-12) * 5));
+	font-family: 'metro-black', sans-serif;
+	font-size: min(15vw, calc(var(--fs-12) * 3.75));
 	line-height: min(18vw, calc(var(--fs-12) * 5));
 	font-weight: var(--fw-6);
 	color: var(--clr-primary);
 }
 
-h1 span {
-	font-family: 'Eureka-Endeavour', serif;
+* {
+	font-family: 'metro-medium', sans-serif;
+	color: var(--clr-primary);
+}
+
+*.on-light {
+	color: var(--clr-ovr-bl-90) !important;
+	-webkit-text-stroke: none;
 }
 
 h2 {
-	font-family: 'Eureka-Endeavour', serif;
+	font-family: 'metro-black', sans-serif;
 	font-size: var(--fs-12);
 	line-height: var(--fs-9);
 }
 
-* {
-	font-family: 'JetBrains Mono', monospace;
-	color: var(--clr-primary);
+span.label {
+	font-family: 'metro-black', sans-serif;
+	font-size: var(--fs-2);
+	-webkit-text-stroke: 0.25px var(--clr-mid);
+	color: transparent;
+}
+
+.feature span {
+	font-size: var(--fs-2);
+	-webkit-text-stroke: 0px var(--clr-mid);
+}
+
+span.sublabel {
+	font-size: var(--fs-1);
+}
+
+span.sublabel.on-light,
+.trait > span {
+	color: var(--clr-ovr-bl-80) !important;
+}
+
+.trait > .trait-label {
+	font-family: 'metro-black', sans-serif;
+	font-size: var(--fs-2);
+	color: var(--clr-ovr-bl-90) !important;
+}
+
+.trait > span:not(.trait-label) {
+	font-size: var(--fs-1);
+}
+
+.echo {
+	color: transparent;
+	-webkit-text-stroke: 0.25px var(--clr-mid);
 }
 
 a {
@@ -29,12 +66,17 @@ a:visited {
 	color: var(--clr-primary);
 }
 
-marquee {
-	font-size: var(--fs-1);
+button {
+	font-family: 'metro-black', sans-serif;
+	font-size: var(--fs-4);
+	/* text-stroke: 1px var(--clr-mid);
+	-webkit-text-stroke: 0.25px var(--clr-mid);
+	color: transparent; */
+	color: var(--clr-mid);
 }
 
 p {
-	font-size: var(--fs-1);
+	font-size: var(--fs-2);
 	color: var(--clr-primary);
 }
 
@@ -44,6 +86,6 @@ p[data-variant='feat'] {
 }
 
 p[data-variant='feat'] span {
-	font-family: 'Uphoria-Endeavour', serif;
+	font-family: 'metro-black', sans-serif;
 	font-size: calc(var(--fs-12) * 2);
 }

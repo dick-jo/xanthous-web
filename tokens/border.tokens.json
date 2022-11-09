@@ -1,6 +1,9 @@
 {
 	"ln": {
-		"1": { "value": "1px solid {clr.secondary}" }
+		"1": { "value": "1px solid {clr.secondary}" },
+		"primary": {
+			"1": { "value": "1px solid {clr.primary}" }
+		}
 	},
 	"br": {
 		"01": { "value": "calc({sp.01} * 0.5)", "type": "borderRadius" },
