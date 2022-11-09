@@ -473,7 +473,7 @@ header > #title > h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../assets/img/bg-6.png);
+	background-image: url(../assets/img/bg-6.webp);
 }
 
 #section-3 > .feature-host {
@@ -525,7 +525,7 @@ header > #title > h1 {
 	min-width: 50%;
 	min-height: calc(var(--sp-12) * 3);
 	border-radius: var(--br-2);
-	background-image: url('../assets/img/feature.webp');
+	background-image: url(../assets/img/feature.webp);
 	background-size: cover;
 	background-position: center;
 	transform: translateZ(24px);
@@ -613,6 +613,5 @@ header > #title > h1 {
 	padding-left: var(--sp-12);
 	padding-right: var(--sp-12);
 	align-items: center;
-	background-image: url(../assets/img/bg-5.png);
 	justify-content: center;
 }
