@@ -614,4 +614,5 @@ header > #title > h1 {
 	padding-right: var(--sp-12);
 	align-items: center;
 	justify-content: center;
+	z-index: 6;
 }
